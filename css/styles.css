@@ -506,15 +506,15 @@ img {
 /* подписаться на рассылку */
 
 .subscribe {
-  display: block;
+  /* display: flex; */
   width: 570px;
 }
-.subscribe-container {
+.subscribe__form {
   display: flex;
-  flex-direction: row;
-  /* margin-top: 20px; */
+  margin-top: 20px;
 }
-.subscribe .email {
+
+.input-email {
   /* display: inline-block; */
   width: 358px;
   padding: 9px 12px;
@@ -522,6 +522,7 @@ img {
   border-radius: 4px;
 
   color: rgba(255, 255, 255, 0.6);
+  background-color: var(--footer-bckgr-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -529,6 +530,7 @@ img {
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
+  outline: none;
 }
 .subscribe-container__button {
   display: flex;

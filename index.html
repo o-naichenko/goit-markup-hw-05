@@ -341,36 +341,29 @@
       </div>
       <!-- подписаться на рассылку -->
       <div class="subscribe block">
-        <b class="block-title">Подпишитесь на рассылку</b>
         <!-- e-mail -->
-        <div class="subscribe-container">
-          <div class="email">E-mail</div>
+        <b class="block-title">Подпишитесь на рассылку</b>
+        <form class="subscribe__form" action="" method="POST">
+          <label for="email"></label>
+          <input class="input-email" type="text" id="email" placeholder="E-mail">
           <button class="subscribe-container__button">
             <span class="subscribe-container__title">Подписаться</span>
             <svg class="subscribe-container__icon" aria-label="icon-send" width="24" height="24">
               <use href="./images/symbol-defs.svg#icon_send"></use>
             </svg>
           </button>
-        </div>
+        </form>
       </div>
     </div>
     <p class="copyright">2020 | Developed by GoIT Students</p>
   </footer>
   <div class="backdrop is-hidden" data-backdrop>
-    <div class="modal">
-      <button class="modal__close-btn" data-close-modal>
-        <svg class="modal__close-btn-logo" width="11" height="11">
-          <use href="./images/close.svg"></use>
-        </svg>
-      </button>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis
-        debitis quibusdam doloremque perspiciatis distinctio consequuntur
-        nobis ipsa dolore earum quisquam qui eveniet maxime ad, numquam libero
-        quos, veritatis accusantium similique tempora nemo? Quo consequuntur
-        iusto eius aut facilis doloribus aliquam quae vitae dolor
-        voluptatibus? Accusamus corrupti cumque odio illo.
-      </p>
+    <div class="order-modal">
+      <form class="order-modal__form" action="" method="POST">
+        <button class="close-modal"></button>
+        <label for="name"></label>
+        <input type="text" id="name">
+      </form>
     </div>
   </div>
 
