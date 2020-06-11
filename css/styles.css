@@ -114,7 +114,8 @@ img {
 }
 .nav-link:hover,
 .nav-link:focus,
-.current::before {
+.current::before,
+.current {
   color: var(--blue-color);
   opacity: 1;
 }
@@ -214,14 +215,13 @@ img {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-.modal {
+.order-modal {
   position: absolute;
   top: 50%;
   left: 50%;
-
   min-height: 528px;
   min-width: 581px;
-  padding: 15px;
+  padding: 40px;
 
   background-color: #fff;
 
@@ -328,8 +328,9 @@ img {
   text-align: center;
   background-color: var(--white-color);
   list-style-type: none;
-  /* box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12); */
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-name {
   margin: 30px 0 0 0;
@@ -582,27 +583,28 @@ img {
 /* gallery */
 /* filter  */
 .filter-list {
+  display: flex;
   padding: 0;
   margin: 0 0 50px 0;
-  display: flex;
   justify-content: center;
   /* text-align: center; */
 }
 .filter-item {
-  display: inline-block;
+  list-style-type: none;
 }
 .filter-button {
-  display: block;
+  display: inline-block;
   background-color: var(--light-gray-color);
   color: var(--dark-gray-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
 
-  display: inline-block;
-  padding: 10px 32px;
-  border-color: var(--blue-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  padding: 6px 22px;
   border: 0;
   border-radius: 4px;
   transition: var(--trans-time);
