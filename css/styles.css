@@ -229,12 +229,25 @@ img {
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .modal__close-btn {
+.close-modal {
   display: flex;
+  position: absolute;
+  top: -9px;
+  right: -10px;
+
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-color);
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
-.modal__close-btn-logo {
-  fill: currentColor;
-} */
+.close-modal__icon {
+  /* display: block; */
+}
 /* advanatages */
 .hidden {
   display: none;

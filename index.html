@@ -361,15 +361,26 @@
     <div class="order-modal">
       <b>Оставьте свои данные, мы вам перезвоним</b>
       <form class="order-modal__form" action="" method="POST">
-        <button class="close-modal"></button>
-        <label for="name"></label>
-        <input class="input" type="text" id="name">
-        <label for="tel"></label>
-        <input class="input" type="text" id="tel">
-        <label for="email"></label>
-        <input class="input" type="text" id="email">
-        <label for="comment"></label>
-        <textarea class="input" name="comment" id="comment" cols="30" rows="10" placeholder="Комментарий"></textarea>
+        <button class="close-modal" data-close-modal>
+          <svg class="close-modal__icon" aria-label="icon-close" width="11" height="11">
+            <use href="./images/symbol-defs.svg#close"></use>
+          </svg>
+        </button>
+        <div role="group">
+          <label for="">
+            <input class="input" type="text">
+          </label>
+          <label for="">
+            <input class="input" type="text">
+          </label>
+          <label for="">
+            <input class="input" type="text">
+          </label>
+          <label for="">
+            <textarea class="input" name="comment" id="comment" cols="30" rows="10"
+              placeholder="Комментарий"></textarea>
+        </div>
+        </label>
       </form>
     </div>
   </div>
@@ -393,6 +404,21 @@
     function logBackdropClick() {
       console.log('Это клик в бекдроп');
     }
+  </script>
+  <script>
+    (() => {
+      document
+        .querySelector('.js-speaker-form')
+        .addEventListener('submit', e => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, name) =>
+            console.log(`${name}: ${value}`),
+          );
+
+          e.currentTarget.reset();
+        });
+    })();
   </script>
 </body>
 
