@@ -343,9 +343,10 @@
       <div class="subscribe block">
         <!-- e-mail -->
         <b class="block-title">Подпишитесь на рассылку</b>
-        <form class="subscribe__form" action="" method="POST">
-          <label for="email"></label>
-          <input class="input-email" type="text" id="email" placeholder="E-mail">
+        <form class="subscribe__form" action="#" method="POST">
+          <label>
+            <input class="input-email" type="text" name="user e-mail" placeholder="E-mail">
+          </label>
           <button class="subscribe-container__button">
             <span class="subscribe-container__title">Подписаться</span>
             <svg class="subscribe-container__icon" aria-label="icon-send" width="24" height="24">
@@ -360,27 +361,27 @@
   <div class="backdrop is-hidden" data-backdrop>
     <div class="order-modal">
       <b>Оставьте свои данные, мы вам перезвоним</b>
-      <form class="order-modal__form" action="" method="POST">
+      <form class="order-modal__form" action="#" method="POST">
         <button class="close-modal" data-close-modal>
           <svg class="close-modal__icon" aria-label="icon-close" width="11" height="11">
             <use href="./images/symbol-defs.svg#close"></use>
           </svg>
         </button>
         <div role="group">
-          <label for="">
+          <label>
             <input class="input" type="text">
           </label>
-          <label for="">
+          <label>
             <input class="input" type="text">
           </label>
-          <label for="">
+          <label>
             <input class="input" type="text">
           </label>
-          <label for="">
-            <textarea class="input" name="comment" id="comment" cols="30" rows="10"
-              placeholder="Комментарий"></textarea>
+          <label>
+            <textarea class="input" name="comment" id="comment" cols="30" rows="10" placeholder="Комментарий">
+            </textarea>
+          </label>
         </div>
-        </label>
       </form>
     </div>
   </div>
